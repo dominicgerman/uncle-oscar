@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Hamburger from './Hamburger.svelte';
-	import Search from './Search.svelte';
+	import Search from './SearchButton.svelte';
 
 	export let sidebar = false;
 	export let searchbar = false;

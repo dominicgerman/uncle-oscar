@@ -3,7 +3,7 @@
 </script>
 
 <aside class="absolute w-[77vw] h-full bg-black" class:open>
-	<button class="absolute right-10 top-10" on:click={() => (open = false)}
+	<button class="justify-self-end" on:click={() => (open = false)}
 		><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
 				fill-rule="evenodd"
@@ -13,7 +13,7 @@
 			/>
 		</svg>
 	</button>
-	<nav class="px-9 pt-24 text-lg text-white">
+	<nav class="text-white">
 		<a class="flex gap-4 items-center py-2 px-4 rounded-md my-1 bg-[#1E1E1E]" href="#home">
 			<svg
 				width="19"
@@ -222,45 +222,46 @@
 			</svg>
 			<span>About</span></a
 		>
-		<button class="btn" aria-label="Log Out" />
 	</nav>
+	<a href="/" class="btn-wrapper">
+		<div class="btn"><p class="btn-text">Log Out</p></div>
+	</a>
 </aside>
 
 <style>
 	aside {
 		left: -100%;
 		transition: left 0.3s ease-in-out;
+		display: grid;
+		grid-template-rows: 100px auto 100px;
+		padding: 0 40px;
 	}
 
 	.open {
 		left: 0;
 	}
 
-	.btn {
-		width: 220px;
-		height: 60px;
-		border: 0;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		background-color: #000;
-	}
-
-	.btn:after {
-		content: attr(aria-label);
+	.btn-wrapper {
 		background: linear-gradient(212deg, #34d4f7 0%, #1252f5 100%);
 		width: 220px;
 		height: 60px;
-		line-height: 60px;
-		border: 0;
-		position: absolute;
-		font-size: 18px;
-		font-weight: 500;
-		top: 50%;
-		left: 50%;
-		transform: translate3d(-50%, -50%, 0) scaleX(1) scaleY(1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 94%;
+		width: 98%;
+		background-color: black;
+	}
+
+	.btn-text {
+		color: transparent;
+		background: linear-gradient(212deg, #34d4f7 0%, #1252f5 100%);
+		background-clip: text;
 	}
 </style>

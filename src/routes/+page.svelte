@@ -3,10 +3,10 @@
 	import LoginButton from '$lib/components/LoginButton.svelte';
 </script>
 
-<div class="h-full flex flex-col justify-between">
+<div class="flex flex-col justify-between px-10 h-full">
 	<div class="pt-[10%] mx-auto my-0 max-w-2xl">
 		<img
-			class="pb-5"
+			class="py-5"
 			src="/oscar.png"
 			alt="silhouetted icon of the oscar trophy"
 			height="53px"
@@ -17,11 +17,15 @@
 			Margaret Herrick remarked that it resembled her <span>Uncle Oscar</span>.
 		</p>
 	</div>
-	<div class="mx-auto">
+	<div class="mx-auto pb-10">
 		<SignUpButton />
 		<LoginButton />
 	</div>
 </div>
+
+<!-- 
+	
+ -->
 
 <style>
 	p {
