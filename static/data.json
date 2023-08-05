@@ -1,0 +1,57 @@
+{
+	"best_actor": [
+		{
+			"title": "Tàr",
+			"imagePath": "/tar.jpg",
+			"winner": "true"
+		},
+		{
+			"title": "The Banshees of Inesherin",
+			"imagePath": "/banshees.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "Elvis",
+			"imagePath": "/elvis.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "The Fabelmans",
+			"imagePath": "fabelmans.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "Avatar",
+			"imagePath": "/avatar.jpg",
+			"winner": "false"
+		}
+	],
+
+	"best_picture": [
+		{
+			"title": "Top Gun",
+			"imagePath": "/top-gun.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "Triangle of Sadness",
+			"imagePath": "/triangle-of-sadness.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "All Quiet on the Western Front",
+			"imagePath": "/western-front.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "Women Talking",
+			"imagePath": "/women-talking.jpg",
+			"winner": "false"
+		},
+		{
+			"title": "Everything, Everywhere, All At Once",
+			"imagePath": "/everything-everywhere.jpg",
+			"winner": "true"
+		}
+	]
+}

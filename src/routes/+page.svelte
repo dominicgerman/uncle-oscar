@@ -1,6 +1,5 @@
 <script lang="ts">
-	import SignUpButton from '$lib/components/SignUpButton.svelte';
-	import LoginButton from '$lib/components/LoginButton.svelte';
+	import HomeButton from '$lib/components/HomeButton.svelte';
 </script>
 
 <div class="flex flex-col justify-between px-10 h-full">
@@ -18,14 +17,16 @@
 		</p>
 	</div>
 	<div class="mx-auto pb-10">
-		<SignUpButton />
-		<LoginButton />
+		<div class="flex items-center justify-center">
+			<a href="/dom" style="background: linear-gradient(218deg, #34D4F7 0%, #1252F5 100%);"
+				>Sign Up</a
+			>
+		</div>
+		<div class="flex items-center justify-center">
+			<a href="/dom">Login</a>
+		</div>
 	</div>
 </div>
-
-<!-- 
-	
- -->
 
 <style>
 	p {
@@ -44,6 +45,18 @@
 		font-family: Poppins;
 		font-size: 28px;
 		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1 0 310px;
+		height: 60px;
+		color: #fff;
+		text-align: center;
+		font-size: 18px;
 		font-weight: 500;
 		line-height: normal;
 	}
