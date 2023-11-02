@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HomeButton from '$lib/components/HomeButton.svelte';
+	// import HomeButton from '$lib/components/HomeButton.svelte';
 </script>
 
 <div class="flex flex-col justify-between px-10 h-full">
