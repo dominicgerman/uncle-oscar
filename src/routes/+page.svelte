@@ -23,7 +23,7 @@
 			>
 		</div>
 		<div class="flex items-center justify-center">
-			<a href="/dom">Log in</a>
+			<a href="/dom">Login</a>
 		</div>
 	</div>
 </div>
